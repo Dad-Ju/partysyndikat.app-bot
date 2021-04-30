@@ -22,7 +22,6 @@ module.exports = {
      * @param {import("discord.js").Client} Client - The Discord JS Client
      */
     code: async (interaction, Client) => {
-        console.log(interaction.member)
         const targetchannel = interaction.member.voice.channel
         if(!targetchannel) return interaction.channel.send("Bro, du musst in einem Voicechannel sein....\nKekW")
         
