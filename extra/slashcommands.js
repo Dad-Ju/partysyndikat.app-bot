@@ -66,7 +66,7 @@ const enableCommand = async (commandName, commandDesc, slashConfig) => {
     // TODO TBD if I can just use add to Override instead of editing it
     // if(scope[commandName.toLowerCase()]) return editCommand()
 
-    console.log("Adding or Updating Slaschcommand!")
+    console.log("Adding or Updating Slashcommand!")
 
     const {data} = await SlashDiscord.post(`${slashConfig.guild ? "guilds/" + slashConfig.guild : ""}/commands`, JSON.stringify({
         name: commandName.toLowerCase(), 
